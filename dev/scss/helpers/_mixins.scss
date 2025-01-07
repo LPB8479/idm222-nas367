@@ -1,0 +1,58 @@
+
+/* =============
+    Mixins
+============= */
+/* ---------------- Media Queries ---------------- */
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+//Usage
+// @include sm{
+//     grid-template-columns: 100%;
+// }
+
+
+// Medium devices
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+//Usage
+// @include md{
+//     grid-template-columns: 20% 80%;
+// }
+
+
+// Large devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+//Usage
+// @include lg{
+//     grid-template-columns: repeat(3, 1fr);
+// }
+
+
+// Extra large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+//Usage
+// @include xl{
+//     grid-template-columns: repeat(4, 1fr);
+// }
+
+// Super Extra large devices
+@mixin xxl {
+    @media (min-width: #{$screen-xxl-min}) {
+        @content;
+    }
+}
