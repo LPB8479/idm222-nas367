@@ -349,6 +349,11 @@ ul.blankList {
   list-style-type: disc !important;
 }
 
+img {
+  width: auto;
+  height: 100%;
+}
+
 /* =============
     Typography
 ============= */
