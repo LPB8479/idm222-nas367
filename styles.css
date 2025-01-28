@@ -6,7 +6,16 @@
     Variables
 ============= */
 :root {
-  --white: white;
+  --lightModeBkg: white;
+  --lightModePrimary: #2b2d2f;
+  --darkModeBkg: #212121;
+  --darkModePrimary: white;
+  /*other colors*/
+  --accentBlue50: #5266D9;
+  --gray: #999999;
+  --DNmagenta: #EA008A;
+  /*other*/
+  --rhythm: 1.5rem;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
