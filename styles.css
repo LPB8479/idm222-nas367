@@ -334,6 +334,21 @@ template {
 /* =============
     Base
 ============= */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul.blankList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bulletFix {
+  list-style-type: disc !important;
+}
+
 /* =============
     Typography
 ============= */
