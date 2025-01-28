@@ -1,3 +1,70 @@
 /* =============
     Typography
 ============= */
+* {
+    color: var(--lightModePrimary);
+    line-height: 1.4;
+}
+
+a:link {
+
+    color: var(--accentBlue60);
+}
+
+body {
+    font-family: "urw-form", sans-serif;
+}
+
+p {
+    //16px
+    font-size: 1rem;
+    font-weight: 400;
+
+    &.year {
+        //14px
+        font-size: 0.875rem;
+        font-weight: 300;
+    }
+
+    &.mainYear {
+        //18px
+        color: var(--gray);
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+}
+
+h1 {
+    //24px
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    &.mainName {
+        //32px
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+h2 {
+    //20px
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+h3 {
+    //16px
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.noLink a {
+    color: var(--lightModePrimary);
+    text-decoration: none !important;
+}
+
+.dnBold {
+    font-weight: 700;
+    color: var(--DNmagenta) !important;
+}

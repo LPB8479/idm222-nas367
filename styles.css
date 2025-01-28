@@ -337,6 +337,63 @@ template {
 /* =============
     Typography
 ============= */
+* {
+  color: var(--lightModePrimary);
+  line-height: 1.4;
+}
+
+a:link {
+  color: var(--accentBlue60);
+}
+
+body {
+  font-family: "urw-form", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+p.year {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+p.mainYear {
+  color: var(--gray);
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+h1.mainName {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.noLink a {
+  color: var(--lightModePrimary);
+  text-decoration: none !important;
+}
+
+.dnBold {
+  font-weight: 700;
+  color: var(--DNmagenta) !important;
+}
+
 /* =============
     Buttons
 ============= */
