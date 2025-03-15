@@ -4,12 +4,35 @@
 ============= */
 /* ---------------- Media Queries ---------------- */
 // Small devices
-// @mixin sm {
-//     @media (min-width: #{$screen-sm-min}) {
-//         @content;
-//     }
-// }
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
 //Usage
 // @include sm{
 //     grid-template-columns: 100%;
+// }
+
+// Large devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+//Usage
+// @include lg{
+//     grid-template-columns: repeat(3, 1fr);
+// }
+
+
+// Extra large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+//Usage
+// @include xl{
+//     grid-template-columns: repeat(4, 1fr);
 // }

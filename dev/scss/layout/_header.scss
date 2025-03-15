@@ -1,3 +1,65 @@
 /* =============
     Header
 ============= */
+header {
+    align-items: center;
+    background-color: var(--accentBlue50);
+    color: var(--lightModeBkg) !important;
+    display: flex;
+    flex-direction: column;
+    grid-area: header;
+    padding: 0 var(--rhythm);
+    width: 100%;
+
+    section {
+        align-items: center;
+        align-self: stretch;
+        display: flex;
+        gap: var(--rhythm);
+
+        #name {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px 0 14.5px 0;
+
+            & * {
+                margin: 0;
+            }
+
+            h1 {
+                font-size: 1.875rem;
+                font-weight: 800;
+            }
+
+            h2 {
+                font-size: 1.063em;
+                font-weight: 500;
+            }
+        }
+
+        #burgerX {
+            background: url("/assets/spritesheet.gif") no-repeat;
+            background-position: 0px 0px;
+            background-size: cover;
+            border: 1px solid var(--lightModeBkg);
+            border-radius: 10px;
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    nav {
+        display: none;
+        // hr {}
+
+        // ul {
+        //     li {
+        //         a {
+        //             .navHeader {}
+        //         }
+        //     }
+        // }
+    }
+}
