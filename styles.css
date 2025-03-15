@@ -332,11 +332,11 @@ template {
 ============= */
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 ul.blankList {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
@@ -345,10 +345,72 @@ ul.blankList {
 }
 
 img {
-  width: auto;
   height: 100%;
+  width: auto;
+  max-width: 100%;
 }
 
+body {
+  background-color: var(--lightModeBkg);
+}
+@media (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-areas: "header main";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  grid-area: main;
+  gap: var(--rhythm);
+  margin: 0 var(--rhythm);
+}
+body main section {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+body main section.title {
+  width: 100%;
+  gap: 16px;
+  justify-content: center;
+}
+body main section.title h1, body main section.title p {
+  align-self: stretch;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  body main section.title h1, body main section.title p {
+    align-self: auto;
+    text-align: left;
+  }
+}
+body main .gallery {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rhythm);
+}
+body main .gallery img {
+  width: 100%;
+}
+body main .gallery.noGap {
+  gap: 0;
+}
+@media (min-width: 576px) {
+  body main .gallery {
+    display: grid;
+  }
+  body main .gallery.twoColumn {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body main .gallery.threeColumn {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* =============
     Typography
 ============= */
