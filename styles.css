@@ -535,14 +535,28 @@ header section #name h2 {
   font-size: 1.063em;
   font-weight: 500;
 }
-header section #burgerX {
+header section button {
+  background-color: transparent;
+  border: 0;
+  height: 36px;
+  width: 36px;
+  padding: 0;
+}
+header section button #icon {
+  border: 1px solid var(--lightModeBkg);
+  border-radius: 10px;
+  height: 36px;
+  width: 36px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+header section button #burgerX {
   background: url("/assets/spritesheet.gif") no-repeat;
   background-position: 0px 0px;
   background-size: cover;
-  border: 1px solid var(--lightModeBkg);
-  border-radius: 10px;
-  height: 24px;
-  width: 24px;
+  height: 16px;
+  width: 16px;
 }
 header nav {
   display: none;
