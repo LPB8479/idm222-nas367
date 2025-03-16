@@ -379,12 +379,14 @@ body main section.title {
   gap: 16px;
   justify-content: center;
 }
-body main section.title h1, body main section.title p {
+body main section.title h1,
+body main section.title p {
   align-self: stretch;
   text-align: center;
 }
 @media (min-width: 1024px) {
-  body main section.title h1, body main section.title p {
+  body main section.title h1,
+  body main section.title p {
     align-self: auto;
     text-align: left;
   }
