@@ -71,9 +71,15 @@ header {
                 background-position: 0px 0px;
                 background-size: cover;
                 height: 16px;
+                transition: background-position 0.4s ease-out;
                 width: 16px;
+
             }
 
+            &.X #burgerX {
+                background-position: -16px 0px;
+            }
+            
             @include lg{
                 display: none;
             }

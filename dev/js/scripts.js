@@ -77,6 +77,7 @@ function hamburger() {
     if (!burgerBtn.dataset.eventAdded) {
         burgerBtn.addEventListener("click", () => {
             nav.classList.toggle("open");
+            burgerBtn.classList.toggle("X");
         })
         burgerBtn.dataset.eventAdded = "true";
     }
@@ -142,4 +143,5 @@ document.addEventListener("DOMContentLoaded", () => {
 //make sure nav is always collapsed when resizing
 window.addEventListener("resize", () => {
     document.querySelector(".main-menu").classList.remove("open");
+    document.querySelector("header button").classList.remove("X");
 });
