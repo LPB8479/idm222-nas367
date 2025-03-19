@@ -1,3 +1,24 @@
 /* =============
     Footer
 ============= */
+footer {
+    margin-top: var(--rhythm);
+    padding-bottom: var(--rhythm);
+
+    hr {
+        background-color: var(--accentBlue50);
+        height: 3px;
+    }
+
+    div {
+        margin-right: var(--rhythm);
+        text-align: center;
+
+        img {
+            height: 22px !important;
+            margin-left: 3px;
+            vertical-align: text-bottom;
+            width: 22px !important;
+        }
+    }
+}
