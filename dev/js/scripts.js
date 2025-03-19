@@ -101,6 +101,7 @@ if (mainGal) {
         a.style.backgroundImage = `url(${page.bkgdSrc})`;
         a.style.backgroundSize = page.bkgdSize;
         a.style.backgroundPosition = page.bkgdPosition;
+        a.classList.add("noLink");
         a.addEventListener('mouseenter', () => showInfo(a.id), false);
         a.addEventListener('mouseleave', () => hideInfo(a.id), false);
         mainGal.appendChild(a);
