@@ -567,6 +567,11 @@ header section button #burgerX {
   height: 16px;
   width: 16px;
 }
+@media (min-width: 1024px) {
+  header section button {
+    display: none;
+  }
+}
 header nav {
   display: none;
   margin-bottom: 100px;
@@ -597,8 +602,11 @@ header nav ul a.navHeader {
 @media (min-width: 1024px) {
   header nav {
     margin-bottom: 0;
-    display: block;
+    display: block !important;
     height: 100%;
+  }
+  header nav ul {
+    align-items: initial;
   }
 }
 

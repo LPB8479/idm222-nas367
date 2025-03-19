@@ -69,6 +69,10 @@ header {
                 height: 16px;
                 width: 16px;
             }
+
+            @include lg{
+                display: none;
+            }
         }
 
     }
@@ -106,8 +110,12 @@ header {
 
         @include lg{
             margin-bottom: 0;
-            display: block;
+            display: block !important;
             height: 100%;
+
+            ul {
+                align-items: initial;
+            }
         }
     }
 }
