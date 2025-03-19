@@ -513,6 +513,11 @@ header {
   padding: 0 var(--rhythm);
   width: 100%;
 }
+@media (min-width: 1024px) {
+  header {
+    height: max(100%, 100vh);
+  }
+}
 header section {
   align-items: center;
   align-self: stretch;
@@ -603,7 +608,6 @@ header nav ul a.navHeader {
   header nav {
     margin-bottom: 0;
     display: block !important;
-    height: 100vh;
   }
   header nav ul {
     align-items: initial;
