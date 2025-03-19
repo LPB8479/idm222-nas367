@@ -111,7 +111,7 @@ header {
         @include lg{
             margin-bottom: 0;
             display: block !important;
-            height: 100%;
+            height: 100vh;
 
             ul {
                 align-items: initial;
