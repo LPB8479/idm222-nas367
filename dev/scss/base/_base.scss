@@ -61,6 +61,10 @@ body {
                     }
                 }
             }
+
+            img.map{
+                margin-top: var(--rhythm);
+            }
         }
 
         .gallery {

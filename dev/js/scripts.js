@@ -73,9 +73,10 @@ function remToPx(remValue) {
 
 function hamburger() {
     const burgerBtn = document.querySelector("header button");
+    const nav = document.querySelector(".main-menu");
     if (!burgerBtn.dataset.eventAdded) {
         burgerBtn.addEventListener("click", () => {
-            $(".main-menu").slideToggle(500);
+            nav.classList.toggle("open");
         })
         burgerBtn.dataset.eventAdded = "true";
     }
@@ -137,6 +138,8 @@ if (mainGal) {
 document.addEventListener("DOMContentLoaded", () => {
     hamburger();
 });
-// window.addEventListener("resize", () => {
-//     hamburger();
-// });
+
+//make sure nav is always collapsed when resizing
+window.addEventListener("resize", () => {
+    document.querySelector(".main-menu").classList.remove("open");
+});

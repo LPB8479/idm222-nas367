@@ -391,6 +391,9 @@ body main section.title p {
     text-align: left;
   }
 }
+body main section img.map {
+  margin-top: var(--rhythm);
+}
 body main .gallery {
   display: flex;
   flex-direction: column;
@@ -578,7 +581,12 @@ header section button #burgerX {
   }
 }
 header nav {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+header nav.open {
+  max-height: 100vh;
   margin-bottom: 100px;
 }
 header nav hr {
@@ -606,8 +614,7 @@ header nav ul a.navHeader {
 }
 @media (min-width: 1024px) {
   header nav {
-    margin-bottom: 0;
-    display: block !important;
+    max-height: 100% !important;
   }
   header nav ul {
     align-items: initial;
