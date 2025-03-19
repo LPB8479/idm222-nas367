@@ -16,13 +16,18 @@ header {
         align-self: stretch;
         display: flex;
         gap: var(--rhythm);
+        justify-content: space-between;
 
         #name {
-            align-items: center;
             display: flex;
             flex-direction: column;
+            flex-grow: 1;
             gap: 20px;
             padding: 20px 0 14.5px 0;
+
+            @include sm{
+                align-items: center;
+            }
 
             & * {
                 margin: 0;
@@ -42,6 +47,7 @@ header {
         button {
             background-color: transparent;
             border: 0;
+            cursor: pointer;
             height: 36px;
             width: 36px;
             padding: 0;
@@ -60,8 +66,6 @@ header {
                 background: url("/assets/spritesheet.gif") no-repeat;
                 background-position: 0px 0px;
                 background-size: cover;
-                // border: 1px solid var(--lightModeBkg);
-                // border-radius: 10px;
                 height: 16px;
                 width: 16px;
             }
@@ -71,14 +75,39 @@ header {
 
     nav {
         display: none;
-        // hr {}
+        margin-bottom: 100px;
 
-        // ul {
-        //     li {
-        //         a {
-        //             .navHeader {}
-        //         }
-        //     }
-        // }
+        hr {
+            color: var(--lightModeBkg);
+            width: 100%;
+            margin: var(--rhythm) 0;
+        }
+
+        ul {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: var(--rhythm);
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+            a {
+                font-size: 1rem;
+                font-weight: 400;
+
+                &.navHeader {
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        @include lg{
+            margin-bottom: 0;
+            display: block;
+            height: 100%;
+        }
     }
 }
