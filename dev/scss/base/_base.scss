@@ -111,7 +111,6 @@ body {
                     }
 
                     @include sm {
-                        grid-template-columns: repeat(2, 1fr);
                         grid-auto-rows: auto;
                         align-items: start;
 
@@ -121,13 +120,47 @@ body {
                             grid-row: span 2;
                         }
                     }
+                }
 
-                    @include xl{
+                &#archive,
+                &#mainGallery {
+                    @include sm {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+
+                    @include xl {
                         grid-template-columns: repeat(3, 1fr);
                     }
                 }
 
-                &#mainGallery {}
+                &#mainGallery {
+                    a {
+                        aspect-ratio: 1;
+                        padding: var(--rhythm);
+                        background-repeat: no-repeat;
+
+                        &.doubleWidth{
+                            @include xl{
+                                aspect-ratio: 2 / 1;
+                                grid-column: span 2;
+                            }
+                        }
+
+                        .coverInfo{
+                            align-items: center;
+                            align-self: center;
+                            background-color: var(--lightModeBkg);
+                            display: flex;
+                            flex-direction: column;
+                            height: 100%;
+                            justify-content: center;
+                            opacity: 0;
+                            transition: background 3s;
+                            width: 100%;
+                            padding: var(--rhythm);
+                        }
+                    }
+                }
             }
 
             &#aboutContent {
