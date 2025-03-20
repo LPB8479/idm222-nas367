@@ -14,7 +14,8 @@ const data = [
         "path": "rodeo.html",
         "bkgdSrc": "assets/rodeoposter.jpg",
         "bkgdSize": "cover",
-        "bkgdPosition": "top"
+        "bkgdPosition": "top",
+        "class": "doubleWidth"
     },
     {
         "name": "The Franklin Institute Rebrand",
