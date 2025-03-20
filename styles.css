@@ -358,12 +358,15 @@ img {
   overflow: hidden;
   width: 24px;
 }
-#icon #download {
-  background: url("/assets/spritesheet.gif") no-repeat;
-  background-position: -50px 0;
+#icon div {
+  background: url("/assets/spritesheet.gif");
+  background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
+}
+#icon #download {
+  background-position: -50px 0;
 }
 
 body {
