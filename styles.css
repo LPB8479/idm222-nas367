@@ -374,6 +374,12 @@ img {
 .iconLink .icon #download {
   background-position: -50px 0;
 }
+.iconLink .icon #web {
+  background-position: -75px 0;
+}
+.iconLink .icon #insta {
+  background-position: -100px 0;
+}
 
 body {
   background-color: var(--lightModeBkg);
@@ -416,7 +422,7 @@ body main section.title p {
   }
 }
 body main section.gallery {
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: var(--rhythm);
 }
@@ -427,9 +433,6 @@ body main section.gallery.noGap {
   gap: 0;
 }
 @media (min-width: 576px) {
-  body main section.gallery {
-    display: grid;
-  }
   body main section.gallery.twoColumn {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -503,6 +506,136 @@ body main section#aboutContent {
     margin-right: var(--rhythm);
     max-width: 50%;
   }
+}
+body main section.dnSect {
+  padding-top: var(--rhythm);
+  padding-bottom: var(--rhythm);
+  gap: var(--rhythm);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+@media (min-width: 576px) {
+  body main section.dnSect {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+body main section.dnSect p {
+  grid-area: text;
+}
+body main section.dnSect img:not(.nomax) {
+  max-height: 50vh;
+}
+body main section.dnSect .img1 {
+  grid-area: img1;
+}
+body main section.dnSect .img2 {
+  grid-area: img2;
+}
+body main section.dnSect .img3 {
+  grid-area: img3;
+}
+body main section.dnSect .img4 {
+  grid-area: img4;
+}
+body main section.dnSect .img5 {
+  grid-area: img5;
+}
+body main section.dnSect#dnIntro {
+  align-items: center;
+}
+body main section.dnSect#dnIntro img {
+  grid-area: image;
+  object-fit: cover;
+  width: 100%;
+  justify-self: center;
+}
+body main section.dnSect#dnIntro h2 {
+  width: 100%;
+  grid-area: subhead;
+}
+@media (min-width: 576px) {
+  body main section.dnSect#dnIntro {
+    grid-template-areas: "image text" "subhead subhead";
+    display: grid;
+    align-items: initial;
+  }
+}
+body main section.dnSect#theWindow {
+  justify-items: center;
+  grid-template-areas: "text text" "img1 img2" "img3 img3";
+}
+body main section.dnSect#theWindow img {
+  height: auto;
+}
+@media (min-width: 1024px) {
+  body main section.dnSect#theWindow {
+    grid-template-areas: "text img1" "img2 img3";
+  }
+}
+body main section.dnSect#asp {
+  grid-template-areas: "text text" "img1 img2" "img3 img4";
+}
+body main section.dnSect#asp img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  body main section.dnSect#asp {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "img2 img2 img2 text text" "img2 img2 img2 img1 img1" "img3 img3 img4 img4 img4";
+  }
+}
+body main section.dnSect#thoseEyes {
+  grid-template-areas: "text text" "img1 img2" "img3 img4";
+}
+body main section.dnSect#thoseEyes img {
+  object-fit: cover;
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  body main section.dnSect#thoseEyes {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "text text text img1 img1 img1" "img2 img2 img3 img3 img4 img4";
+  }
+}
+body main section.dnSect#lemonadeStand {
+  grid-template-areas: "text text" "img1 img2" "img3 img4";
+}
+body main section.dnSect#lemonadeStand .img1 {
+  background-color: #7071e5;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+@media (min-width: 1024px) {
+  body main section.dnSect#lemonadeStand {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "text img1 img1" "img2 img3 img4";
+  }
+}
+body main section.dnSect#dnLinks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rhythm);
+}
+@media (min-width: 576px) {
+  body main section.dnSect#dnLinks {
+    display: grid;
+    grid-template-columns: repeat(2, 170px);
+    grid-template-areas: "cta cta" "link1 link2";
+  }
+}
+body main section.dnSect#dnLinks h2 {
+  grid-area: cta;
+}
+body main section.dnSect#dnLinks:nth-child(2) {
+  grid-area: link1;
+}
+body main section.dnSect#dnLinks:nth-child(3) {
+  grid-area: link2;
 }
 
 /* =============

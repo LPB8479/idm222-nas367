@@ -46,6 +46,14 @@ img {
         #download {
             background-position: -50px 0;
         }
+
+        #web {
+            background-position: -75px 0;
+        }
+
+        #insta {
+            background-position: -100px 0;
+        }
     }
 }
 
@@ -89,7 +97,7 @@ body {
             }
 
             &.gallery {
-                display: flex;
+                display: grid;
                 flex-direction: column;
                 gap: var(--rhythm);
 
@@ -102,8 +110,6 @@ body {
                 }
 
                 @include sm {
-                    display: grid;
-
                     &.twoColumn {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -187,6 +193,177 @@ body {
                         margin-bottom: var(--rhythm);
                         margin-right: var(--rhythm);
                         max-width: 50%;
+                    }
+                }
+            }
+
+            &.dnSect {
+                padding-top: var(--rhythm);
+                padding-bottom: var(--rhythm);
+                gap: var(--rhythm);
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+
+                @include sm {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @include lg {}
+
+                p {
+                    grid-area: text;
+                }
+
+                img:not(.nomax) {
+                    max-height: 50vh;
+                }
+
+                .img1 {
+                    grid-area: img1;
+                }
+
+                .img2 {
+                    grid-area: img2;
+                }
+
+                .img3 {
+                    grid-area: img3;
+                }
+
+                .img4 {
+                    grid-area: img4;
+                }
+
+                .img5 {
+                    grid-area: img5;
+                }
+
+                &#dnIntro {
+                    align-items: center;
+
+                    img {
+                        grid-area: image;
+                        object-fit: cover;
+                        width: 100%;
+                        justify-self: center;
+                    }
+
+                    h2 {
+                        width: 100%;
+                        grid-area: subhead;
+                    }
+
+                    @include sm {
+                        grid-template-areas:
+                            'image text'
+                            'subhead subhead';
+                        display: grid;
+                        align-items: initial;
+                    }
+                }
+
+                &#theWindow {
+                    justify-items: center;
+                    grid-template-areas:
+                        'text text'
+                        'img1 img2'
+                        'img3 img3';
+
+                    img {
+                        height: auto;
+                    }
+
+                    @include lg {
+                        grid-template-areas:
+                            'text img1'
+                            'img2 img3';
+                    }
+                }
+
+                &#asp {
+                    grid-template-areas:
+                        'text text'
+                        'img1 img2'
+                        'img3 img4';
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    @include lg {
+                        grid-template-columns: repeat(5, 1fr);
+                        grid-template-areas:
+                            'img2 img2 img2 text text'
+                            'img2 img2 img2 img1 img1'
+                            'img3 img3 img4 img4 img4';
+                    }
+                }
+
+                &#thoseEyes {
+                    grid-template-areas:
+                        'text text'
+                        'img1 img2'
+                        'img3 img4';
+
+                    img {
+                        object-fit: cover;
+                        height: 100%;
+                    }
+
+                    @include lg {
+                        grid-template-columns: repeat(6, 1fr);
+                        grid-template-areas:
+                            'text text text img1 img1 img1'
+                            'img2 img2 img3 img3 img4 img4';
+                    }
+                }
+
+                &#lemonadeStand {
+                    grid-template-areas:
+                        'text text'
+                        'img1 img2'
+                        'img3 img4';
+
+                    .img1 {
+                        background-color: #7071e5;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+
+                    @include lg {
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-template-areas:
+                            'text img1 img1'
+                            'img2 img3 img4';
+                    }
+                }
+
+                &#dnLinks {
+                    display: flex;
+                    flex-direction: column;
+                    gap: var(--rhythm);
+
+                    @include sm {
+                        display: grid;
+                        grid-template-columns: repeat(2, 170px);
+                        grid-template-areas:
+                            'cta cta'
+                            'link1 link2';
+                    }
+                    h2 {
+                        grid-area: cta;
+                    }
+                    &:nth-child(2) {
+                        grid-area: link1;
+                    }
+                    &:nth-child(3) {
+                        grid-area: link2;
                     }
                 }
             }
