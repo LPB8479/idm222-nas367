@@ -48,15 +48,34 @@
         <section>
             <p>Agatha Christie's Hercule Poirot series follows the titular detective as he solves murder mysteries around the world. The novels all have a very similar, "cookie cutter" plotline, represented by the basic shapes, and the textures are reminiscent of passport stamps, reflecting Poirot's worldly adventures.</p>
         </section>
-        <!-- <ul class="blankList gallery threeColumn noGap">
-            <li><img src="/assets/bookcover1.png" alt=""></li>
-            <li><img src="/assets/bookcover2.png" alt=""></li>
-            <li><img src="/assets/bookcover3.png" alt=""></li>
-        </ul> -->
         <section class="gallery threeColumn noGap">
-            <img src="/assets/bookcover1.png" alt="">
-            <img src="/assets/bookcover2.png" alt="">
-            <img src="/assets/bookcover3.png" alt="">
+            <picture>
+                <source
+                        media="(min-width: 1440px)"
+                        srcset="/assets/bookcover1-lg.png" />
+                <source
+                        media="(min-width: 1024px)"
+                        srcset="/assets/bookcover1-md.png" />
+                <img src="/assets/bookcover1-sm.png" alt="Murder on the Orient Express book cover" />
+            </picture>
+            <picture>
+                <source
+                        media="(min-width: 1440px)"
+                        srcset="/assets/bookcover2-lg.png" />
+                <source
+                        media="(min-width: 1024px)"
+                        srcset="/assets/bookcover2-md.png" />
+                <img src="/assets/bookcover2-sm.png" alt="Death on the Nile book cover" />
+            </picture>
+            <picture>
+                <source
+                        media="(min-width: 1440px)"
+                        srcset="/assets/bookcover3-lg.png" />
+                <source
+                        media="(min-width: 1024px)"
+                        srcset="/assets/bookcover3-md.png" />
+                <img src="/assets/bookcover3-sm.png" alt="Evil Under the Sun book cover" />
+            </picture>
         </section>
         <section>
             <h2>Process:</h2>
