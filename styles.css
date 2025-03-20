@@ -350,7 +350,13 @@ img {
   width: auto;
 }
 
-#icon {
+.iconLink {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+.iconLink .icon {
   align-items: center;
   display: flex;
   height: 24px;
@@ -358,14 +364,14 @@ img {
   overflow: hidden;
   width: 24px;
 }
-#icon div {
+.iconLink .icon div {
   background: url("/assets/spritesheet.gif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
 }
-#icon #download {
+.iconLink .icon #download {
   background-position: -50px 0;
 }
 
@@ -497,12 +503,6 @@ body main section#aboutContent {
     margin-right: var(--rhythm);
     max-width: 50%;
   }
-}
-body main section#resume a {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  gap: 0.25em;
 }
 
 /* =============
