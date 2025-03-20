@@ -18,7 +18,24 @@ ul.blankList {
 img {
     height: 100%;
     width: auto;
-    max-width: 100%
+    max-width: 100%;
+}
+
+#icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    #download{
+        width: 100%;
+        height: 100%;
+        background: url("/assets/spritesheet.gif") no-repeat;
+        background-size: cover;
+        background-position: -50px 0;
+    }
 }
 
 body {
@@ -44,6 +61,7 @@ body {
             align-self: stretch;
             display: flex;
             flex-direction: column;
+            gap: var(--rhythm);
 
             &.title {
                 width: 100%;
@@ -53,48 +71,67 @@ body {
                 h1,
                 p {
                     align-self: stretch;
-                    text-align: center;
 
                     @include lg {
                         align-self: auto;
-                        text-align: left;
                     }
                 }
             }
 
-            img.map{
-                margin-top: var(--rhythm);
-            }
-        }
+            .gallery {
+                display: flex;
+                flex-direction: column;
+                gap: var(--rhythm);
 
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            gap: var(--rhythm);
-
-            img {
-                width: 100%;
-            }
-
-            &.noGap {
-                gap: 0;
-            }
-
-            @include sm {
-                display: grid;
-
-                &.twoColumn {
-                    grid-template-columns: repeat(2, 1fr);
+                img {
+                    width: 100%;
                 }
 
-                &.threeColumn {
-                    grid-template-columns: repeat(3, 1fr);
+                &.noGap {
+                    gap: 0;
+                }
+
+                @include sm {
+                    display: grid;
+
+                    &.twoColumn {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+
+                    &.threeColumn {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                }
+
+                &#mainGallery {}
+
+                &#archive {}
+            }
+
+            &#aboutContent {
+                display: flex;
+                align-items: center;
+                @include sm {
+                    display: block;
+                    clear: both;
+
+                    img {
+                        max-width: 50%;
+                        height: auto;
+                        float: left;
+                        margin-right: var(--rhythm);
+                        margin-bottom: var(--rhythm);
+                    }
+
                 }
             }
 
-            &#mainGallery {}
-
-            &#archive {}
+            &#resume a{
+                align-items: center;
+                display: flex;
+                gap: 0.25em;
+                flex-direction: row;
+            }
         }
     }
 }
