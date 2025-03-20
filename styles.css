@@ -406,25 +406,25 @@ body main section.title p {
     align-self: auto;
   }
 }
-body main section .gallery {
+body main section.gallery {
   display: flex;
   flex-direction: column;
   gap: var(--rhythm);
 }
-body main section .gallery img {
+body main section.gallery img {
   width: 100%;
 }
-body main section .gallery.noGap {
+body main section.gallery.noGap {
   gap: 0;
 }
 @media (min-width: 576px) {
-  body main section .gallery {
+  body main section.gallery {
     display: grid;
   }
-  body main section .gallery.twoColumn {
+  body main section.gallery.twoColumn {
     grid-template-columns: repeat(2, 1fr);
   }
-  body main section .gallery.threeColumn {
+  body main section.gallery.threeColumn {
     grid-template-columns: repeat(3, 1fr);
   }
 }

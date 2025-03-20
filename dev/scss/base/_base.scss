@@ -78,7 +78,7 @@ body {
                 }
             }
 
-            .gallery {
+            &.gallery {
                 display: flex;
                 flex-direction: column;
                 gap: var(--rhythm);
