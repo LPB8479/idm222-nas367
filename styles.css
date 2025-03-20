@@ -346,24 +346,24 @@ ul.blankList {
 
 img {
   height: 100%;
-  width: auto;
   max-width: 100%;
+  width: auto;
 }
 
 #icon {
-  width: 24px;
-  height: 24px;
-  display: flex;
   align-items: center;
+  display: flex;
+  height: 24px;
   justify-content: center;
   overflow: hidden;
+  width: 24px;
 }
 #icon #download {
-  width: 100%;
-  height: 100%;
   background: url("/assets/spritesheet.gif") no-repeat;
-  background-size: cover;
   background-position: -50px 0;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -380,8 +380,8 @@ body {
 body main {
   display: flex;
   flex-direction: column;
-  grid-area: main;
   gap: var(--rhythm);
+  grid-area: main;
   margin: 0 var(--rhythm);
 }
 body main section {
@@ -392,9 +392,9 @@ body main section {
   gap: var(--rhythm);
 }
 body main section.title {
-  width: 100%;
   gap: 16px;
   justify-content: center;
+  width: 100%;
 }
 body main section.title h1,
 body main section.title p {
@@ -429,14 +429,14 @@ body main section.gallery.noGap {
   }
 }
 body main section.gallery#archive img {
-  width: 100%;
   height: auto;
   object-fit: cover;
+  width: 100%;
 }
 @media (min-width: 576px) {
   body main section.gallery#archive {
-    grid-auto-rows: auto;
     align-items: start;
+    grid-auto-rows: auto;
   }
   body main section.gallery#archive img:nth-child(3),
   body main section.gallery#archive img:nth-child(4),
@@ -456,8 +456,8 @@ body main section.gallery#archive img {
 }
 body main section.gallery#mainGallery a {
   aspect-ratio: 1;
-  padding: var(--rhythm);
   background-repeat: no-repeat;
+  padding: var(--rhythm);
 }
 @media (min-width: 1200px) {
   body main section.gallery#mainGallery a.doubleWidth {
@@ -474,32 +474,32 @@ body main section.gallery#mainGallery a .coverInfo {
   height: 100%;
   justify-content: center;
   opacity: 0;
+  padding: var(--rhythm);
   transition: background 3s;
   width: 100%;
-  padding: var(--rhythm);
 }
 body main section#aboutContent {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 @media (min-width: 576px) {
   body main section#aboutContent {
-    display: block;
     clear: both;
+    display: block;
   }
   body main section#aboutContent img {
-    max-width: 50%;
-    height: auto;
     float: left;
-    margin-right: var(--rhythm);
+    height: auto;
     margin-bottom: var(--rhythm);
+    margin-right: var(--rhythm);
+    max-width: 50%;
   }
 }
 body main section#resume a {
   align-items: center;
   display: flex;
-  gap: 0.25em;
   flex-direction: row;
+  gap: 0.25em;
 }
 
 /* =============
@@ -642,17 +642,17 @@ header section button {
   border: 0;
   cursor: pointer;
   height: 36px;
-  width: 36px;
   padding: 0;
+  width: 36px;
 }
 header section button #headerIcon {
+  align-items: center;
   border: 1px solid var(--lightModeBkg);
   border-radius: 10px;
-  height: 36px;
-  width: 36px;
-  align-items: center;
   display: flex;
+  height: 36px;
   justify-content: center;
+  width: 36px;
 }
 header section button #burgerX {
   background: url("/assets/spritesheet.gif") no-repeat;
@@ -676,13 +676,13 @@ header nav {
   transition: max-height 0.4s ease-out;
 }
 header nav.open {
-  max-height: 100vh;
   margin-bottom: 100px;
+  max-height: 100vh;
 }
 header nav hr {
   color: var(--lightModeBkg);
-  width: 100%;
   margin: var(--rhythm) 0;
+  width: 100%;
 }
 header nav ul {
   align-items: center;
