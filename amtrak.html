@@ -47,13 +47,51 @@
         <section>
             <p>A multi-page, interactive redesign of Amtrak’s website and booking process. My main goals were to reduce the clutter on the page and to streamline the booking process.</p>
         </section>
-        <section class="gallery">
-            <img src="assets/amtkhome.png" alt="Amtrak Site Home">
+        <picture>
+            <source
+                    media="(min-width: 1440px)"
+                    srcset="/assets/amtkhome-xl.png" />
+            <source
+                    media="(min-width: 1024px)"
+                    srcset="/assets/amtkhome-lg.png" />
+            <img src="assets/amtkhome-min.png" alt="Amtrak Site Home">
+        </picture>
+        <picture>
+            <source
+                    media="(min-width: 1440px)"
+                    srcset="/assets/amtkdepartureboard-xl.png" />
+            <source
+                    media="(min-width: 1024px)"
+                    srcset="/assets/amtkdepartureboard-lg.png" />
             <img src="assets/amtkdepartureboard.png" alt="Amtrak Departure Board Page">
+        </picture>
+        <picture>
+            <source
+                    media="(min-width: 1440px)"
+                    srcset="/assets/amtkschedule-xl.png" />
+            <source
+                    media="(min-width: 1024px)"
+                    srcset="/assets/amtkschedule-lg.png" />
             <img src="assets/amtkschedule.png" alt="Amtrak Schedule Page">
+        </picture>
+        <picture>
+            <source
+                    media="(min-width: 1440px)"
+                    srcset="/assets/amtktickets1-xl.png" />
+            <source
+                    media="(min-width: 1024px)"
+                    srcset="/assets/amtktickets1-lg.png" />
             <img src="assets/amtktickets1.png" alt="Amtrak Booking Page 1">
+        </picture>
+        <picture>
+            <source
+                    media="(min-width: 1440px)"
+                    srcset="/assets/MRKRIXKWRA1-xl.png" />
+            <source
+                    media="(min-width: 1024px)"
+                    srcset="/assets/MRKRIXKWRA1-lg.png" />
             <img src="assets/amtktickets2.png" alt="Amtrak Booking Page 2">
-        </section>
+        </picture>
         <!--Footer-->
         <footer>
             <hr>
@@ -67,7 +105,7 @@
                     </a>
                 </p>
             </div>
-        </footer>         
+        </footer>
     </main>
 </body>
 <script src="scripts-min.js"></script>

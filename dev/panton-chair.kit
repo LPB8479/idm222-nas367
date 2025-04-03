@@ -14,11 +14,26 @@
             <p>A poster advertising a hypothetical exhibition about the revolutionary stacking chair by Verner Panton. The design uses the motion of the upside-down form of the chair to draw the viewer’s eye towards the exhibition information.</p>
         </section>
         <section>
-            <img class="maxHeight" src="assets/chairposter.jpg" alt="Panton Chair Poster">
+            <picture class="maxHeight">
+                <source
+                        media="(min-width: 1440px)"
+                        srcset="/assets/chairposter-xl.png" />
+                <source
+                <img src="/assets/chairposter-min.png" alt="Panton Chair Poster" />
+            </picture>
         </section>
         <section>
             <h2>Process:</h2>
             <img class="maxHeight" src="/assets/chairposterprocess.png" alt="">
+            <picture>
+                <source
+                        media="(min-width: 1440px)"
+                        srcset="/assets/chairposterprocess-xl.png" />
+                <source
+                        media="(min-width: 1024px)"
+                        srcset="/assets/chairposterprocess-lg.png" />
+                <img src="/assets/chairposterprocess-min.png" alt="" />
+            </picture>
         </section>
         <!-- @import "global/footer.kit" -->
          
