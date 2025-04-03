@@ -3,7 +3,7 @@ const data = [
         "name": "Transit Map Project",
         "year": "2024",
         "path": "transit-maps.html",
-        "bkgdSrc": "assets/dcbaltimore.png",
+        "bkgdSrc": "assets/dcbaltimore-min.png",
         "bkgdSize": "400%",
         "bkgdPosition": "40% 60%",
         "class": "doubleWidth"
@@ -12,7 +12,7 @@ const data = [
         "name": "Rodeo Orchestra Poster",
         "year": "2024",
         "path": "rodeo.html",
-        "bkgdSrc": "assets/rodeoposter.jpg",
+        "bkgdSrc": "assets/rodeoposter-min.jpg",
         "bkgdSize": "cover",
         "bkgdPosition": "top",
         "class": "doubleWidth"
@@ -21,7 +21,7 @@ const data = [
         "name": "The Franklin Institute Rebrand",
         "year": "2023",
         "path": "franklin-institute.html",
-        "bkgdSrc": "assets/franklin0.gif",
+        "bkgdSrc": "assets/franklin0-min.gif",
         "bkgdSize": "contain",
         "bkgdPosition": "center"
     },
@@ -29,7 +29,7 @@ const data = [
         "name": "Amtrak Site Redesign",
         "year": "2023",
         "path": "amtrak.html",
-        "bkgdSrc": "assets/amtkhome.png",
+        "bkgdSrc": "assets/amtkhome-min.png",
         "bkgdSize": "cover",
         "bkgdPosition": "center"
     },
@@ -37,7 +37,7 @@ const data = [
         "name": "Agatha Christie Book Covers",
         "year": "2024",
         "path": "book-covers.html",
-        "bkgdSrc": "assets/bookcoverthumbnail.gif",
+        "bkgdSrc": "assets/bookcoverthumbnail-min.gif",
         "bkgdSize": "cover",
         "bkgdPostition": "center"  
     },
@@ -45,15 +45,7 @@ const data = [
         "name": "Panton Chair Poster",
         "year": "2022",
         "path": "panton-chair.html",
-        "bkgdSrc": "assets/chairposter.jpg",
-        "bkgdSize": "cover",
-        "bkgdPosition": "center"
-    },
-    {
-        "name": "Philadelphia Railroad Photography",
-        "year": "2023",
-        "path": "philly-rr.html",
-        "bkgdSrc": "assets/phillyrrphoto1.jpg",
+        "bkgdSrc": "assets/chairposter-min.jpg",
         "bkgdSize": "cover",
         "bkgdPosition": "center"
     },
@@ -61,7 +53,7 @@ const data = [
         "name": "Dirty Napkin",
         "year": "",
         "path": "dirty-napkin.html",
-        "bkgdSrc": "assets/dirtynapkin.gif",
+        "bkgdSrc": "assets/dirtynapkin-min.gif",
         "bkgdSize": "cover",
         "backgroundPosition": "center"
     }
